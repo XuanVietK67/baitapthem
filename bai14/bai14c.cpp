@@ -33,8 +33,8 @@ int main()
     }
     double length=x[1]-x[0];
     double width=y[2]-y[1];
-    double horizontalStep=(double)length/horizontalCount;
-    double verticalStep=(double)width/verticalCount;
+    double verticalStep=(double)length/horizontalCount;
+    double horizontalStep=(double)width/verticalCount;
     double vertical[100],horizontal[100];int index3=0,index4=0;
     for (int i=0;i<=horizontalCount;i++){
         horizontal[index4]=i*horizontalStep;
@@ -53,7 +53,6 @@ int main()
     }
     if(index4<=2) verticalDistance=0;
     else{
-        cout<<verticalStep<<endl;
         verticalDistance=2*(verticalStep/2-constructionLength/2-d1);
     }
     if (verticalDistance!=0){
